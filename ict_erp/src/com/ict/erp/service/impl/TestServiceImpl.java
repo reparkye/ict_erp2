@@ -9,15 +9,17 @@ import com.ict.erp.service.TestService;
 import com.ict.erp.vo.TestInfo;
 
 public class TestServiceImpl implements TestService {
- 	private TestDAO tdao = new TestDAOImpl();
- 	@Override
- 	public List<TestInfo> getTestList(TestInfo ti) throws SQLException {
+	private TestDAO tdao = new TestDAOImpl();
+	@Override
+	public List<TestInfo> getTestList(TestInfo ti) throws SQLException {
 		// TODO Auto-generated method stub
 		return tdao.selectList(ti);
 	}
-	@Override
-	public TestInfo getTestInf(int tiNum) throws SQLException {		// TODO Auto-generated method stub         !!TestServiceImpl 빨간줄 생기게 되는데 첫번째 눌러주면 된다.!!
-		return tdao.selectList(tiNum);
-	}
 	
+	@Override
+	public TestInfo getTestInf(int tiNum) throws SQLException {
+		// TODO Auto-generated method stub
+		return tdao.selectTestInfo(tiNum);
+	}
+
 }

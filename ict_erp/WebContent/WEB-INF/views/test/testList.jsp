@@ -3,14 +3,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/views/common/common.jsp" %>
-  <%-- <%@ include file="/WEB-INF/views/menu/left.jsp" %>  --%>
- 
-
 <body>
 <div id="wrapper">
- <jsp:include page="/WEB-INF/views/menu/left.jsp" /> 
+<jsp:include page="/WEB-INF/views/menu/left.jsp" />
 	<div id="page-content-wrapper">
-	
 		<div>
 		<a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
 		</div>
@@ -48,10 +44,10 @@
 	<%
 	}
 	%>
-				</tbody>
-			</table>
-		</div>
+			</tbody>
+		</table>
 	</div>
+</div>
 <script>
 	function searchTest(){
 		var shType = document.querySelector('#shType').value;
@@ -65,11 +61,7 @@
 		
 	}
 	function goPage(tiNum){
-		location.href="<%=rPath%>/test/testView?tiNum=" + tiNum;
-		
+		location.href='<%=rPath%>/test/testView?tiNum=' + tiNum;
 	}
 </script>
-</body>
-</html>
-<jsp:include page="/WEB-INF/views/menu/bottom.jsp"/> 
- 
+<jsp:include page="/WEB-INF/views/menu/bottom.jsp"/>

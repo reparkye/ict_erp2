@@ -56,7 +56,7 @@ public class TestDAOImpl implements TestDAO {
 	}
 
 	@Override
-	public TestInfo selectList(int tiNum) throws SQLException {
+	public TestInfo selectTestInfo(int tiNum) throws SQLException {
 		try {
 			Connection con = DBCon.getCon();
 			String sql = "select * from test_info where tiNum=?";
@@ -74,4 +74,5 @@ public class TestDAOImpl implements TestDAO {
 			DBCon.close();
 		}
 	}
+
 }

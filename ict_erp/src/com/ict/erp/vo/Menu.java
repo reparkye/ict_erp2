@@ -1,10 +1,13 @@
 package com.ict.erp.vo;
 
 public class Menu {
-
 	private String miUrl;
 	private String miId;
 	private String miLabel;
+	@Override
+	public String toString() {
+		return "Menu [miUrl=" + miUrl + ", miId=" + miId + ", miLabel=" + miLabel + "]";
+	}
 	public String getMiUrl() {
 		return miUrl;
 	}
@@ -23,12 +26,7 @@ public class Menu {
 	public void setMiLabel(String miLabel) {
 		this.miLabel = miLabel;
 	}
-	@Override
-	public String toString() {
-		return "Menu [miUrl=" + miUrl + ", miId=" + miId + ", miLabel=" + miLabel + "]";
-	}
 	public Menu(String miUrl, String miId, String miLabel) {
-		super();
 		this.miUrl = miUrl;
 		this.miId = miId;
 		this.miLabel = miLabel;

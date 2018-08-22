@@ -1,14 +1,28 @@
 package com.ict.erp.vo;
 
 public class LevelInfo {
-	private int lvl;
+	private int liNum;
+	private int liLevel;
 	private String liName;
 	private String liDesc;
-	public int getLvl() {
-		return lvl;
+	public LevelInfo(int liNum, int liLevel, String liName, String liDesc) {
+		super();
+		this.liNum = liNum;
+		this.liLevel = liLevel;
+		this.liName = liName;
+		this.liDesc = liDesc;
 	}
-	public void setLvl(int lvl) {
-		this.lvl = lvl;
+	public int getLiNum() {
+		return liNum;
+	}
+	public void setLiNum(int liNum) {
+		this.liNum = liNum;
+	}
+	public int getLiLevel() {
+		return liLevel;
+	}
+	public void setLiLevel(int liLevel) {
+		this.liLevel = liLevel;
 	}
 	public String getLiName() {
 		return liName;
@@ -22,16 +36,9 @@ public class LevelInfo {
 	public void setLiDesc(String liDesc) {
 		this.liDesc = liDesc;
 	}
-	
 	@Override
 	public String toString() {
-		return "LevelInfo [lvl=" + lvl + ", liName=" + liName + ", liDesc=" + liDesc + "]";
-	}
-	public LevelInfo(int lvl, String liName, String liDesc) {
-		super();
-		this.lvl = lvl;
-		this.liName = liName;
-		this.liDesc = liDesc;
+		return "LevelInfo [liNum=" + liNum + ", liLevel=" + liLevel + ", liName=" + liName + ", liDesc=" + liDesc + "]";
 	}
 	
 }

@@ -21,21 +21,22 @@
 <body onload="init()">
 <script>
 var context = {
-			text1 : '안녕하세요 반가워요.',
-			text2 : 'hi hello jurion.',
-			text3 : 'my mail address is ygtwodoor.' 
-}
+			text1 : '<div id="div1">안녕하세요<br>저는 박경훈이라고 합니다.</div>',
+			text2 : '저는 착해요.',
+			text3 : '제 메일 주소는 redfila@naver.com 입니다.'
+		}
 
 function init(){
-		document.querySelector('#chText').onchange = function(){ /* this가 윈도우이기때문에 앞에해도 작동ㅇㅋ */
+	alert(this===window);
+	this.document.querySelector('#chText').onchange = function(){
 		var rObj = document.querySelector('#right')
 		rObj.innerHTML = context[this.value];
 		if(this.value=='text1'){
-				var divObj = document.querySelector('#div1');
-				alert(rObj===divObj.parentNode);
-			}
+			var divObj = document.querySelector('#div1');
+			alert(rObj===divObj.parentNode);
 		}
 	}
+}
 
 </script>
 <div>
@@ -46,15 +47,11 @@ function init(){
 			<option value="text2">자기소개</option>
 			<option value="text3">연락처</option>
 		</select>
-		</div>
+	</div>
 	<div id="right">
-	왼쪽 메뉴를 선택해줘
+		왼쪽 메뉴를 선택해주세요.
 	</div>
-	</div>
-<script>
-	document.querySelector('#chText').onchange = function(){
-		alert(this.value);
-	}
-</script>
+
+</div>
 </body>
 </html>

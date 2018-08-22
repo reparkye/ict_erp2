@@ -13,10 +13,10 @@ public class DBCon {
 	private static String pwd;
 	private static String driver;
 	private static Connection con;
-
+	
 	public static void load(String path) {
 		InputStream is = 
-						DBCon.class.getResourceAsStream(path);
+				DBCon.class.getResourceAsStream(path);
 		Properties prop = new Properties();
 		try {
 			prop.load(is);
@@ -34,33 +34,54 @@ public class DBCon {
 		try {
 			Class.forName(driver);
 			con = DriverManager.getConnection(url, user, pwd);
-			con.setAutoCommit(false);              /*딜리트할때 수정*/
+			con.setAutoCommit(false);
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		
 	}
-
 	public static Connection getCon() {
-		if (con == null) {
+		if(con==null) {
 			openCon();
 		}
 		return con;
 	}
-
+	
 	public static void main(String[] args) {
 		getCon();
 	}
 	
-		public static void close() {
-			if(con!=null) {
-				try {
-					con.close();
-				} catch (SQLException e) {
-					e.printStackTrace();
-				}
+	public static void close() {
+		if(con!=null) {
+			try {
+				con.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
 			}
-			con = null;
 		}
+		con = null;
+	}
+
+
+
+public static void commit() {
+	
+	try {
+		con.commit();
+	} catch (SQLException e) {
+		e.printStackTrace();
+	}
+	
+}
+public static void rollback() {
+	
+	try {
+		con.rollback();
+	} catch (SQLException e) {
+		e.printStackTrace();
+	}
+	
+}
 }

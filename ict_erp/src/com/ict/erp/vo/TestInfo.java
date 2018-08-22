@@ -1,10 +1,13 @@
 package com.ict.erp.vo;
- public class TestInfo {
- 	private int tiNum;
+
+public class TestInfo {
+
+	private int tiNum;
 	private String tiId;
 	private String tiName;
 	private String tiText;
 	public TestInfo() {
+		
 	}
 	public TestInfo(int tiNum, String tiId, String tiName, String tiText) {
 		super();
@@ -41,4 +44,5 @@ package com.ict.erp.vo;
 	public String toString() {
 		return "TextInfo [tiNum=" + tiNum + ", tiId=" + tiId + ", tiName=" + tiName + ", tiText=" + tiText + "]";
 	}
+	
 }

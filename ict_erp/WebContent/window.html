@@ -5,16 +5,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<input type="text" onKeyup="chStr(this)">
+<input type="text" onkeyup="chStr(this)">
 <input type="text" data-bind="str">
-<script>						
-	var str = "abc";   /* 10라인이 생성된순간부터 str은 윈도우 사용가능 */
-	alert(window["str"]);
-	alert(window.str);
-	function chStr(obj){
-		str = obj.value;
-		document.querySelector('input[data-bind=str]').value=str;
-	}
+<script>
+	var str = "abc";
+	alert(`${str}`);
 </script>
 </body>
 </html>
