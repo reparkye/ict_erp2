@@ -1,12 +1,17 @@
 package com.ict.erp.vo;
-
-public class DepartInfo {
+ public class DepartInfo {
 	private int diNum;
 	private String diCode;
 	private String diName;
 	private String diDesc;
+	private PageInfo pi;
+	public PageInfo getPi() {
+		return pi;
+	}
+	public void setPi(PageInfo pi) {
+		this.pi = pi;
+	}
 	public DepartInfo() {}
-	
 	public DepartInfo(int diNum, String diCode, String diName, String diDesc) {
 		super();
 		this.diNum = diNum;
@@ -42,7 +47,5 @@ public class DepartInfo {
 	public String toString() {
 		return "DepartInfo [diNum=" + diNum + ", diCode=" + diCode + ", diName=" + diName + ", diDesc=" + diDesc + "]";
 	}
-
-
 	
 }
