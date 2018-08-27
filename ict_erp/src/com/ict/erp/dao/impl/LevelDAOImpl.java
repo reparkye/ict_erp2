@@ -50,7 +50,7 @@
  	@Override
  	public int insertLiList(List<LevelInfo> liList) throws SQLException {
  		String sql = "insert into level_info(liNum,liLevel, liName, liDesc)";
- 		sql += "values(seq_liNum.nextval,?,?,?)";
+ 		sql += "values(seq_linum.nextval,?,?,?)";
  		PreparedStatement ps = con.prepareStatement(sql);
  		int cnt = 0;
  		for(LevelInfo li:liList) {
