@@ -1,12 +1,10 @@
 package com.ict.erp.dao.impl;
- import java.sql.Connection;
-import java.sql.PreparedStatement;
+ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
- import com.ict.erp.common.DBCon;
+
 import com.ict.erp.dao.DepartDAO;
 import com.ict.erp.vo.DepartInfo;
  
@@ -21,6 +19,7 @@ public class DepartDAOImpl extends CommonDAOImpl implements DepartDAO {
 		sql += "select * from depart_info order by diNum desc) di";
 		sql += " where rownum<=?)";
 		sql += " where rNum>=?";
+		try {
 		ps = con.prepareStatement(sql);
 		ps.setInt(1, di.getPi().getlNum());
 		ps.setInt(2, di.getPi().getsNum());
@@ -32,26 +31,43 @@ public class DepartDAOImpl extends CommonDAOImpl implements DepartDAO {
 					rs.getString("diDesc"));
 			diList.add(di);
 		}
-		return diList;
+	}catch(SQLException e){
+		throw e;
+	}finally {
+		close();
 	}
+		return diList;
+ 	}
  	@Override
 	public DepartInfo selectDepartInfo(int diNum) throws SQLException {
 		// TODO Auto-generated method stub
 		return null;
 	}
  	@Override
-	public Map<String, Object> insertDepartInfo(DepartInfo di) throws SQLException {
+	public int insertDepartInfo(DepartInfo di) throws SQLException {
+ 		String sql = "insert into Depart_info(diNum,diCode,diName,diDesc)";
+		sql += "values(seq_diNum.nextval,?,?,?)";
+ 		
+ 		try {
+ 			ps = con.prepareStatement(sql);
+ 			ps.setString(1, di.getDiCode());
+ 			ps.setString(2, di.getDiName());
+ 			ps.setString(3, di.getDiDesc());
+ 			return ps.executeUpdate();
+ 		}catch(SQLException e){
+ 			throw e;
+ 		}finally {
+ 			close(); 		
+	}
+ 	}
+ 	@Override
+	public int updateDepartInfo(DepartInfo di) throws SQLException {
 		// TODO Auto-generated method stub
-		return null;
+		return 0;
 	}
  	@Override
-	public Map<String, Object> updateDepartInfo(DepartInfo di) throws SQLException {
+	public int deleteDepartInfo(DepartInfo di) throws SQLException {
 		// TODO Auto-generated method stub
-		return null;
-	}
- 	@Override
-	public Map<String, Object> deleteDepartInfo(DepartInfo di) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
+		return 0;
 	}}
  

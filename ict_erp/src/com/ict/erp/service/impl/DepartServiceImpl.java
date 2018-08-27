@@ -1,8 +1,10 @@
 package com.ict.erp.service.impl;
  import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
- import com.ict.erp.common.DBCon;
+
+import com.ict.erp.common.DBCon;
 import com.ict.erp.dao.DepartDAO;
 import com.ict.erp.dao.impl.DepartDAOImpl;
 import com.ict.erp.service.DepartService;
@@ -33,11 +35,38 @@ public class DepartServiceImpl implements DepartService {
 		// TODO Auto-generated method stub
 		return null;
 	}
+ 	
  	@Override
 	public Map<String, Object> insertDepartInfo(DepartInfo di) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
+		ddao.setConnection(DBCon.getCon());
+		Map<String, Object> rMap= new HashMap<String,Object>();
+		try {
+			int cnt = ddao.insertDepartInfo(di);
+			rMap.put("cnt", cnt);
+			rMap.put("msg", "실패");
+			
+			if(cnt==1) {
+				rMap.put("msg", "성공하였습니다");
+			}
+		}catch(SQLException e) {
+			throw e;
+		}finally {
+		DBCon.close();
 	}
+		return rMap;
+ 	}
+ 	
+ 	/*public static void main(String[] args) {
+ 		DepartDAO dd = new DepartDAOImpl();
+		dd.setConnection(DBCon.getCon());
+ 		try {
+			dd.insertDepartInfo(null);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+ 	}*/
+ 	
  	@Override
 	public Map<String, Object> updateDepartInfo(DepartInfo di) throws SQLException {
 		// TODO Auto-generated method stub
