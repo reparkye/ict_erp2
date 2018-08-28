@@ -28,13 +28,16 @@
     <servlet-name>TestServlet</servlet-name>
     <url-pattern>/test/*</url-pattern>
   </servlet-mapping>
+
+  
+  
   <servlet>
-    <servlet-name>LevelServlet2</servlet-name>
-    <servlet-class>com.ict.erp.controller.LevelServlet2</servlet-class>
+    <servlet-name>MemberServlet</servlet-name>
+    <servlet-class>com.ict.erp.controller.MemberServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>LevelServlet2</servlet-name>
-    <url-pattern>/level2/*</url-pattern>
+    <servlet-name>MemberServlet</servlet-name>
+    <url-pattern>/member/*</url-pattern>
   </servlet-mapping>
   <error-page>
     <error-code>404</error-code>
