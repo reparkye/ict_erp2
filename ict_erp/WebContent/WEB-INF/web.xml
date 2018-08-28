@@ -29,8 +29,6 @@
     <url-pattern>/test/*</url-pattern>
   </servlet-mapping>
 
-  
-  
   <servlet>
     <servlet-name>MemberServlet</servlet-name>
     <servlet-class>com.ict.erp.controller.MemberServlet</servlet-class>
