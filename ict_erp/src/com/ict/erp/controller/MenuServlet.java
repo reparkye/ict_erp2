@@ -63,7 +63,8 @@ public class MenuServlet extends HttpServlet {
 				String meiDesc = request.getParameter("meiDesc");
 				MenuInfo menu = new MenuInfo(null, meiName, Long.parseLong(meiPrice), meiDesc);
 				request.setAttribute("ri", ms.insertMenu(menu));
-
+			
+				
 			}else if(cmd.equals("menuUpdate")) {
 				String meiNum = request.getParameter("meiNum");
 				String meiName = request.getParameter("meiName");			

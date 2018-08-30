@@ -1,6 +1,6 @@
 package com.ict.erp.vo;
 
-public class musicInfo {
+public class MusicInfo {
 
 	private Integer mcNum;
 	private String mcName;
@@ -10,6 +10,9 @@ public class musicInfo {
 	private int mcDislike;
 	private String mcCredat;
 	private String mcDesc;
+	
+	public MusicInfo() {}
+	
 	@Override
 	public String toString() {
 		return "musicChartInfo [mcNum=" + mcNum + ", mcName=" + mcName + ", mcSinger=" + mcSinger + ", mcVendor="
@@ -64,7 +67,7 @@ public class musicInfo {
 	public void setMcDesc(String mcDesc) {
 		this.mcDesc = mcDesc;
 	}
-	public musicInfo(Integer mcNum, String mcName, String mcSinger, String mcVendor, int mcLike, int mcDislike,
+	public MusicInfo(Integer mcNum, String mcName, String mcSinger, String mcVendor, int mcLike, int mcDislike,
 			String mcCredat, String mcDesc) {
 		super();
 		this.mcNum = mcNum;

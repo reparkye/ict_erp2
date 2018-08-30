@@ -5,7 +5,7 @@
 <script>
 	var cnt = ${mMap};
 	if(cnt == 1){
-		alert("완료");
+		alert("완료되었습니다");
 		location.href="/menu2/menuList";
 	}else{
 		alert("에러");

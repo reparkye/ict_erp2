@@ -6,8 +6,8 @@
 var cnt = ${ri};
 if(cnt==1){
 	alert("성공");
-	location.href = "/menu2/menuList";
-}else{
+	location.href ="/menu2/menuList";
+	}else{
 	alert("실패");
 	}
 </script>
@@ -16,10 +16,7 @@ if(cnt==1){
 	<div id="page-content-wrapper">
 		<form action ="/menu2/menuInsert" method="Post">
 		<table class="table table-bordered">
-			<!-- <tr>
-				<th>번호</th>
-				<td><input type="text" name="meiNum"></td>
-			</tr> -->
+		
 			<tr>
 				<th>메뉴명</th>
 				<td><input type="text" name="meiName"></td>

@@ -44,6 +44,16 @@
     <servlet-name>MenuServlet</servlet-name>
     <url-pattern>/menu2/*</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>MusicServlet</servlet-name>
+    <servlet-class>com.ict.erp.controller.MusicServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MusicServlet</servlet-name>
+    <url-pattern>/music/*</url-pattern>
+  </servlet-mapping>
+  
   <error-page>
     <error-code>404</error-code>
     <location>/WEB-INF/views/error/404.jsp</location>
