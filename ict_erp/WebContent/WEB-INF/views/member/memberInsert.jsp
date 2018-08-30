@@ -6,7 +6,7 @@
 <script>
 	alert('${rMap.msg}');
 	if(${rMap.cnt}==1){
-		location.href="/depart/departList";
+		location.href="/member/memberList";
 	}
 </script>
 </c:if>
@@ -74,7 +74,7 @@
 				<td><input type="text" name="miDesc"></td>
 			</tr>
 			<tr>
-				<td colspan="2"><button>부서등록</button></td>
+				<td colspan="2"><button>부서등록dsds</button></td>
 			</tr>
 		</table>
 		</form>

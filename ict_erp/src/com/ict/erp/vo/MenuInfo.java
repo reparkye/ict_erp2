@@ -1,5 +1,6 @@
 package com.ict.erp.vo;
 
+
 public class MenuInfo {
 
 	private Long meiNum;
@@ -46,5 +47,5 @@ public class MenuInfo {
 				+ "]";
 	}
 	
-	
 }
+

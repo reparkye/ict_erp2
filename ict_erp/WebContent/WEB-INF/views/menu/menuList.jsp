@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/views/common/common.jsp" %>
-<script>
+<!-- <script>
 var AjaxUtil = function(p){
 	var method = p.method?p.method:'GET';
 	var url = p.url?p.url:'/';
@@ -43,7 +43,7 @@ function callback(res){
 var obj = {url:'/menu/menuList',method:'get',suc:callback};
 var au = new AjaxUtil(obj);
 au.send();
-</script>
+</script> -->
 <body>
 <div id="wrapper">
 <jsp:include page="/WEB-INF/views/menu/left.jsp" />
@@ -52,17 +52,24 @@ au.send();
 			<table class="table table-border">
 				<thead>
 					<tr>
-						<th>번호</th>
+						<th>번호</th> 
 						<th>메뉴명</th>
 						<th>메뉴가격</th>
 						<th>설명</th>
 					</tr>
 				</thead>
 				<tbody id='menuTbody'>
+				<c:forEach items="${menuList}" var="menu">
+					<tr>
+						 <td>${menu.meiNum}</td> 
+						<td><a href="/menu/menuView?meiNum=${menu.meiNum}">${menu.meiName}</a></td>
+						<td>${menu.meiPrice}</td>
+						<td>${menu.meiDesc}</td>
+					</tr>
+				</c:forEach>
 				</tbody>				
 			</table>
-		
-			
+			<button data-page ="/views/menu/menuInsert">추가</button>
 		</div>
 	</div>
 </div>
