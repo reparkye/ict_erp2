@@ -6,7 +6,7 @@
 var cnt = ${ri};
 if(cnt==1){
 	alert("성공");
-	location.href = "/menu/menuList";
+	location.href = "/menu2/menuList";
 }else{
 	alert("실패");
 	}
@@ -14,7 +14,7 @@ if(cnt==1){
 
 <div id="wrapper">
 	<div id="page-content-wrapper">
-		<form action ="/menu/menuInsert" method="Post">
+		<form action ="/menu2/menuInsert" method="Post">
 		<table class="table table-bordered">
 			<!-- <tr>
 				<th>번호</th>

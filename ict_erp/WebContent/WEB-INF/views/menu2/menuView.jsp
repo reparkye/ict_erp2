@@ -6,7 +6,7 @@
 	var cnt = ${mMap};
 	if(cnt == 1){
 		alert("완료");
-		location.href="/menu/menuList";
+		location.href="/menu2/menuList";
 	}else{
 		alert("에러");
 	}
@@ -16,7 +16,7 @@
 <div id="wrapper">
 <jsp:include page="/WEB-INF/views/menu/left.jsp" />
 	<div id="page-content-wrapper">
-		<form action ="/menu/menuUpdate" method="post">
+		<form action ="/menu2/menuUpdate" method="post">
 		<table class = "table table-bordered">
 				
 			<tr>
@@ -36,7 +36,7 @@
 			</tr>		
 			<tr>
 				<td colspan="2"><button>부서수정</button>
-				<button data-action="/menu/menuDelete">부서삭제</button>
+				<button data-action="/menu2/menuDelete">부서삭제</button>
 			</tr>	
 		</table>
 		</form>

@@ -62,14 +62,14 @@ au.send();
 				<c:forEach items="${menuList}" var="menu">
 					<tr>
 						 <td>${menu.meiNum}</td> 
-						<td><a href="/menu/menuView?meiNum=${menu.meiNum}">${menu.meiName}</a></td>
+						<td><a href="/menu2/menuView?meiNum=${menu.meiNum}">${menu.meiName}</a></td>
 						<td>${menu.meiPrice}</td>
 						<td>${menu.meiDesc}</td>
 					</tr>
 				</c:forEach>
 				</tbody>				
 			</table>
-			<button data-page ="/views/menu/menuInsert">추가</button>
+			<button data-page ="/views/menu2/menuInsert">추가</button>
 		</div>
 	</div>
 </div>

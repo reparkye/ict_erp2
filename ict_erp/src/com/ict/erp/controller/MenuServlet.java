@@ -71,12 +71,13 @@ public class MenuServlet extends HttpServlet {
 				String meiDesc = request.getParameter("meiDesc");
 				MenuInfo menu = new MenuInfo(Long.parseLong(meiNum),meiName,Long.parseLong(meiPrice),meiDesc);
 				request.setAttribute("mMap", ms.updateMenu(menu));
-				uri = "/menu/menuView";
+				uri = "/menu2/menuView";
 				
 			}else if(cmd.equals("menuDelete")) {
 				String meiNumStr = request.getParameter("meiNum");
 				MenuInfo mi = new MenuInfo(Long.parseLong(meiNumStr),null,null,null);
-				request.setAttribute("di", ms.deleteMenu(mi));
+				uri = "/menu2/menuView";
+				request.setAttribute("mMap", ms.deleteMenu(mi));
 				
 			}
 		}catch(SQLException e) {
