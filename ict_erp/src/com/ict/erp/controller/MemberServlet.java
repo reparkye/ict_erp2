@@ -20,9 +20,11 @@ import com.ict.erp.vo.MemberInfo;
 	private MemberService ms = new MemberServiceImpl();
 	private LevelService ls = new LevelServiceImpl();
 	private DepartService ds = new DepartServiceImpl();
+	private String uri;
+	
 	
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		String uri = req.getRequestURI();
+		uri = req.getRequestURI();
 		String cmd = ICTUtils.getCmd(uri);
 		try {
 			if(cmd.equals("memberList")) {
@@ -30,6 +32,12 @@ import com.ict.erp.vo.MemberInfo;
 			}else if(cmd.equals("memberInsert")) {
 				req.setAttribute("liList", ls.getLiList(null));
 				req.setAttribute("diList", ds.getDepartInfoNonePageList(null));
+			}else if(cmd.equals("memberView")) {
+				req.setAttribute("liList", ls.getLiList(null));
+				req.setAttribute("diList", ds.getDepartInfoNonePageList(null));
+				String miNumstr = req.getPa
+				req.setAttribute("miList", ms.selectMi(mi));
+
 			}
 		}catch(SQLException e) {
 			e.printStackTrace();
@@ -37,9 +45,15 @@ import com.ict.erp.vo.MemberInfo;
 		doService(req,res);
 	}
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		String uri = req.getRequestURI();
+		 uri = req.getRequestURI();
 		String cmd = ICTUtils.getCmd(uri);
+		req.setCharacterEncoding("utf-8");
 		MemberInfo mi = ICTUtils.parse(req, MemberInfo.class);
+		try {
+			if(cmd)
+			
+		}
+		
 		System.out.println(mi);
 	}
 	

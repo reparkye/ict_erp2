@@ -55,8 +55,14 @@ import com.ict.erp.vo.MemberInfo;
 	}
  	@Override
 	public int insertMi(MemberInfo mi) {
-		// TODO Auto-generated method stub
-		return 0;
+ 	String sql = "insert into";
+ 	sql += "values(seq_minum.nextval,?,?,?,?,?,?,?,?,?,?,?)";
+ 	try {
+ 		ps = con.prepareStatement(sql);
+ 		ps.setString
+ 	}
+ 	
+ 		return 0;
 	}
  	@Override
 	public int updateMi(MemberInfo mi) {

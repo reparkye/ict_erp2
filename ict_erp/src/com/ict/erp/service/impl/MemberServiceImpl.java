@@ -33,7 +33,13 @@ import com.ict.erp.vo.MemberInfo;
 	}
 	@Override
 	public MemberInfo selectMi(MemberInfo mi) {
-		// TODO Auto-generated method stub
+		mdao.setConnection(DBCon.getCon());
+		try {
+			
+		}catch(SQLException e) {
+			
+		}
+		
 		return null;
 	}
  	@Override
