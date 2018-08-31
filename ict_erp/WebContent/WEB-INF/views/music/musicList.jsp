@@ -22,8 +22,9 @@
 			<tbody id="musicTbody">
 			<c:forEach items="${musicList}" var="music">
 				<tr>
-					<td>${music.mcNum}</td>
-					<td><a href = "/music/musicView?mcNum=${music.mcNum}">${music.mcName} </a></td>
+					<td><a href = "/music/musicView?mcNum=${music.mcNum}">${music.mcNum}</a></td>
+					
+					<td>${music.mcName}</td>
 					<td>${music.mcSinger}</td>
 					<td>${music.mcVendor}</td>
 					<td>${music.mcLike}</td>

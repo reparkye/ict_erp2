@@ -44,7 +44,6 @@
     <servlet-name>MenuServlet</servlet-name>
     <url-pattern>/menu2/*</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>MusicServlet</servlet-name>
     <servlet-class>com.ict.erp.controller.MusicServlet</servlet-class>
@@ -53,6 +52,16 @@
     <servlet-name>MusicServlet</servlet-name>
     <url-pattern>/music/*</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>TicketMovieServlet</servlet-name>
+    <servlet-class>com.ict.erp.controller.TicketMovieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TicketMovieServlet</servlet-name>
+    <url-pattern>/tMovie/*</url-pattern>
+  </servlet-mapping>
+  
   
   <error-page>
     <error-code>404</error-code>
