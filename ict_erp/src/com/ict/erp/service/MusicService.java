@@ -9,4 +9,6 @@ public interface MusicService {
 
 	public List<MusicInfo> getmusicList(MusicInfo mi)throws SQLException;
 	public  MusicInfo getmusic(MusicInfo mi)throws SQLException;
+	public int insertMusic(MusicInfo mi) throws SQLException;
+	public int deleteMusic(MusicInfo mi) throws SQLException;
 }

@@ -1,0 +1,12 @@
+[2018-08-31 13:46:14,893] INFO (AuthFilter.java:39):/music/musicList
+[2018-08-31 13:46:14,905] WARN (AuthFilter.java:41):/music/musicList
+[2018-08-31 13:46:14,905]ERROR (AuthFilter.java:43):/music/musicList
+[2018-08-31 13:46:14,905]FATAL (AuthFilter.java:45):/music/musicList
+[2018-08-31 13:58:22,558] INFO (AuthFilter.java:39):/menu2/menuList
+[2018-08-31 13:58:22,559] WARN (AuthFilter.java:41):/menu2/menuList
+[2018-08-31 13:58:22,559]ERROR (AuthFilter.java:43):/menu2/menuList
+[2018-08-31 13:58:22,560]FATAL (AuthFilter.java:45):/menu2/menuList
+[2018-08-31 13:58:24,045] INFO (AuthFilter.java:39):/views/menu2/menuInsert
+[2018-08-31 13:58:24,046] WARN (AuthFilter.java:41):/views/menu2/menuInsert
+[2018-08-31 13:58:24,046]ERROR (AuthFilter.java:43):/views/menu2/menuInsert
+[2018-08-31 13:58:24,047]FATAL (AuthFilter.java:45):/views/menu2/menuInsert

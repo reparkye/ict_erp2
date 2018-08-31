@@ -25,7 +25,7 @@
 					<td>${music.mcNum}</td>
 					<td><a href = "/music/musicView?mcNum=${music.mcNum}">${music.mcName} </a></td>
 					<td>${music.mcSinger}</td>
-					<td>${music.mcVender}</td>
+					<td>${music.mcVendor}</td>
 					<td>${music.mcLike}</td>
 					<td>${music.mcDislike}</td>
 					<td>${music.mcCredat}</td>
@@ -34,6 +34,7 @@
 			</c:forEach>
 			</tbody>
 		</table>
+		<button data-page = "/views/music/musicInsert">추가</button>
 	</div>
 </div>
 </div>

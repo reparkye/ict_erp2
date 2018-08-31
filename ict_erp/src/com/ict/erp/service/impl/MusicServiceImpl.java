@@ -23,12 +23,47 @@ public class MusicServiceImpl implements MusicService {
 		DBCon.getCon();
 		}
 	}
+	
+	
+	public static void main(String[] args) {
+		MusicService ms = new MusicServiceImpl();
+		try {
+		System.out.println(ms.getmusicList(null));	
+			}catch(SQLException e) {
+	}
+	}
 
 	@Override
 	public MusicInfo getmusic(MusicInfo mi) throws SQLException {
 		mdao.setConnection(DBCon.getCon());
 		try {
 			return mdao.selectMusicLL(mi);
+		}catch(SQLException e) {
+			throw e;
+		}finally {
+			DBCon.close();
+		}
+	}
+
+
+	@Override
+	public int insertMusic(MusicInfo mi) throws SQLException {
+		mdao.setConnection(DBCon.getCon());
+		try {
+		return mdao.insertMusicList(mi);
+	}catch(SQLException e) {
+		throw e;
+	}finally {
+		DBCon.close();
+	}
+}
+
+
+	@Override
+	public int deleteMusic(MusicInfo mi) throws SQLException {
+		mdao.setConnection(DBCon.getCon());
+		try {
+			return mdao.deleteMusicList(mi);
 		}catch(SQLException e) {
 			throw e;
 		}finally {
