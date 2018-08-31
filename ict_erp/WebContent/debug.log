@@ -1,0 +1,24 @@
+[2018-08-31 15:57:09,994] INFO (AuthFilter.java:39):/
+[2018-08-31 15:57:10,006] WARN (AuthFilter.java:41):/
+[2018-08-31 15:57:10,007]ERROR (AuthFilter.java:43):/
+[2018-08-31 15:57:10,007]FATAL (AuthFilter.java:45):/
+[2018-08-31 15:57:15,273] INFO (AuthFilter.java:39):/views/menu2/menuInsert
+[2018-08-31 15:57:15,274] WARN (AuthFilter.java:41):/views/menu2/menuInsert
+[2018-08-31 15:57:15,275]ERROR (AuthFilter.java:43):/views/menu2/menuInsert
+[2018-08-31 15:57:15,275]FATAL (AuthFilter.java:45):/views/menu2/menuInsert
+[2018-08-31 15:57:23,243] INFO (AuthFilter.java:39):/menu2/menuInsert
+[2018-08-31 15:57:23,243] WARN (AuthFilter.java:41):/menu2/menuInsert
+[2018-08-31 15:57:23,244]ERROR (AuthFilter.java:43):/menu2/menuInsert
+[2018-08-31 15:57:23,244]FATAL (AuthFilter.java:45):/menu2/menuInsert
+[2018-08-31 15:57:55,334] INFO (AuthFilter.java:39):/menu2/menuInsert
+[2018-08-31 15:57:55,335] WARN (AuthFilter.java:41):/menu2/menuInsert
+[2018-08-31 15:57:55,336]ERROR (AuthFilter.java:43):/menu2/menuInsert
+[2018-08-31 15:57:55,336]FATAL (AuthFilter.java:45):/menu2/menuInsert
+[2018-08-31 15:57:56,478] INFO (AuthFilter.java:39):/menu2/menuList
+[2018-08-31 15:57:56,478] WARN (AuthFilter.java:41):/menu2/menuList
+[2018-08-31 15:57:56,479]ERROR (AuthFilter.java:43):/menu2/menuList
+[2018-08-31 15:57:56,480]FATAL (AuthFilter.java:45):/menu2/menuList
+[2018-08-31 16:00:36,959] INFO (AuthFilter.java:39):/menu2/menuView
+[2018-08-31 16:00:36,960] WARN (AuthFilter.java:41):/menu2/menuView
+[2018-08-31 16:00:36,961]ERROR (AuthFilter.java:43):/menu2/menuView
+[2018-08-31 16:00:36,961]FATAL (AuthFilter.java:45):/menu2/menuView

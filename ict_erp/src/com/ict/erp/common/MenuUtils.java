@@ -1,9 +1,8 @@
 package com.ict.erp.common;
 
+import java.awt.Menu;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.ict.erp.vo.Menu;
 
 public class MenuUtils {
 	private static List<Menu> menuList; 

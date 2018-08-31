@@ -61,6 +61,7 @@ public class MenuServlet extends HttpServlet {
 				String meiName = request.getParameter("meiName");			
 				String meiPrice = request.getParameter("meiPrice");
 				String meiDesc = request.getParameter("meiDesc");
+				System.out.println(meiPrice);
 				MenuInfo menu = new MenuInfo(null, meiName, Long.parseLong(meiPrice), meiDesc);
 				request.setAttribute("ri", ms.insertMenu(menu));
 			
@@ -84,6 +85,7 @@ public class MenuServlet extends HttpServlet {
 		}catch(SQLException e) {
 			pw.print("야 에러 났어!");
 			pw.print("에러 이유는 : " + e);
+			e.printStackTrace();
 		}
 		doService(request, response);
 
