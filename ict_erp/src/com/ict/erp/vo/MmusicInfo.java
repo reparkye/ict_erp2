@@ -1,6 +1,6 @@
 package com.ict.erp.vo;
 
-public class MusicInfo2 {
+public class MmusicInfo {
 
 	private Integer mcNum;
 	private String mcName;
@@ -10,7 +10,10 @@ public class MusicInfo2 {
 	private int mcDislike;
 	private String mcCredat;
 	private String mcDesc;
-	public MusicInfo2(Integer mcNum, String mcName, String mcSinger, String mcVendor, int mcLike, int mcDislike,
+	
+	public MmusicInfo()	{}
+
+	public MmusicInfo(Integer mcNum, String mcName, String mcSinger, String mcVendor, int mcLike, int mcDislike,
 			String mcCredat, String mcDesc) {
 		super();
 		this.mcNum = mcNum;
@@ -22,60 +25,78 @@ public class MusicInfo2 {
 		this.mcCredat = mcCredat;
 		this.mcDesc = mcDesc;
 	}
+
 	public Integer getMcNum() {
 		return mcNum;
 	}
+
 	public void setMcNum(Integer mcNum) {
 		this.mcNum = mcNum;
 	}
+
 	public String getMcName() {
 		return mcName;
 	}
+
 	public void setMcName(String mcName) {
 		this.mcName = mcName;
 	}
+
 	public String getMcSinger() {
 		return mcSinger;
 	}
+
 	public void setMcSinger(String mcSinger) {
 		this.mcSinger = mcSinger;
 	}
+
 	public String getMcVendor() {
 		return mcVendor;
 	}
+
 	public void setMcVendor(String mcVendor) {
 		this.mcVendor = mcVendor;
 	}
+
 	public int getMcLike() {
 		return mcLike;
 	}
+
 	public void setMcLike(int mcLike) {
 		this.mcLike = mcLike;
 	}
+
 	public int getMcDislike() {
 		return mcDislike;
 	}
+
 	public void setMcDislike(int mcDislike) {
 		this.mcDislike = mcDislike;
 	}
+
 	public String getMcCredat() {
 		return mcCredat;
 	}
+
 	public void setMcCredat(String mcCredat) {
 		this.mcCredat = mcCredat;
 	}
+
 	public String getMcDesc() {
 		return mcDesc;
 	}
+
 	public void setMcDesc(String mcDesc) {
 		this.mcDesc = mcDesc;
 	}
+
 	@Override
 	public String toString() {
-		return "MusicInfo2 [mcNum=" + mcNum + ", mcName=" + mcName + ", mcSinger=" + mcSinger + ", mcVendor=" + mcVendor
+		return "MmusicInfo [mcNum=" + mcNum + ", mcName=" + mcName + ", mcSinger=" + mcSinger + ", mcVendor=" + mcVendor
 				+ ", mcLike=" + mcLike + ", mcDislike=" + mcDislike + ", mcCredat=" + mcCredat + ", mcDesc=" + mcDesc
 				+ "]";
 	}
+	
 	
 	
 }

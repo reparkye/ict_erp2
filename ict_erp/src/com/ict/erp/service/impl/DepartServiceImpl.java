@@ -40,7 +40,14 @@ package com.ict.erp.service.impl;
  			DBCon.close();
  		}
  	}
- 
+ 	/*public static void main(String[] args) {
+ 		DepartService ms = new DepartServiceImpl();
+ 		try {
+ 			System.out.println(ms.getDepartInfoList(null));
+ 		}catch(SQLException e) {
+ 			
+ 		}
+ 	}*/
  	@Override
  	public Map<String, Object> insertDepartInfo(DepartInfo di) throws SQLException {
  		ddao.setConnection(DBCon.getCon());

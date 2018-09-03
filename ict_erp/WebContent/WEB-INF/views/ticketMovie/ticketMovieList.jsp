@@ -21,7 +21,7 @@
 				</tr>
 			</thead>
 			<tbody>
-			<c:forEach items="${ticketList}" var="ti"></c:forEach>
+			<c:forEach items="${ticketList}" var="ti">
 				<tr>
 					<td>${ti.tmNum}</td>
 					<td>${ti.tmName}</td>
@@ -33,6 +33,7 @@
 					<td>${ti.tmCnt}</td>
 					<td>${ti.tmImg}</td>
 				</tr>
+				</c:forEach>
 			</tbody>
 		</table>
 	</div>

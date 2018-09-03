@@ -7,14 +7,14 @@ import com.ict.erp.common.DBCon;
 import com.ict.erp.dao.TicketMovieDAO;
 import com.ict.erp.dao.impl.TicketMovieDAOImpl;
 import com.ict.erp.service.TicketMovieService;
-import com.ict.erp.vo.TicketMovieInfo;
+import com.ict.erp.vo.TicketMovie;
 
 public class TicketMovieServiceImpl implements TicketMovieService{
 	TicketMovieDAO tm = new TicketMovieDAOImpl();
 	
 	
 	@Override
-	public List<TicketMovieInfo> getTicketMovieList(TicketMovieInfo ti) throws SQLException {
+	public List<TicketMovie> getTicketMovieList(TicketMovie ti) throws SQLException {
 
 		try {
 			tm.setConnection(DBCon.getCon());
@@ -26,9 +26,16 @@ public class TicketMovieServiceImpl implements TicketMovieService{
 		}
 		
 	}
-
+	public static void main(String[] args) {
+		TicketMovieService ts = new TicketMovieServiceImpl();
+		try {
+			System.out.println(ts.getTicketMovieList(null));
+			
+		}catch(SQLException e){
+	}
+	}
 	@Override
-	public TicketMovieInfo getTicketMoviell(TicketMovieInfo ti) throws SQLException {
+	public TicketMovie getTicketMoviell(TicketMovie ti) throws SQLException {
 		// TODO Auto-generated method stub
 		return null;
 	}

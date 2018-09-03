@@ -24,39 +24,14 @@ package com.ict.erp.vo;
 	}
 	
 	public MemberInfo() {}
-	
-	public MemberInfo(Long miNum, String miId, String miName, String miPwd, String diCode, Long liLevel, String miEmail,
-			String miDesc, String miPhone, String miZipcode, String miAddress1, String miAddress2) {
-		super();
-		this.miNum = miNum;
-		this.miId = miId;
-		this.miName = miName;
-		this.miPwd = miPwd;
-		this.diCode = diCode;
-		this.liLevel = liLevel;
-		this.miEmail = miEmail;
-		this.miDesc = miDesc;
-		this.miPhone = miPhone;
-		this.miZipcode = miZipcode;
-		this.miAddress1 = miAddress1;
-		this.miAddress2 = miAddress2;
-		
+	@Override
+	public String toString() {
+		return "MemberInfo [miNum=" + miNum + ", miId=" + miId + ", miName=" + miName + ", miPwd=" + miPwd + ", diCode="
+				+ diCode + ", liLevel=" + liLevel + ", miEmail=" + miEmail + ", miDesc=" + miDesc + ", miPhone="
+				+ miPhone + ", miZipcode=" + miZipcode + ", miAddress1=" + miAddress1 + ", miAddress2=" + miAddress2
+				+ ", liName=" + liName + ", diName=" + diName + ", pi=" + pi + "]";
 	}
-	
-	
-	public String getLiName() {
-		return liName;
-	}
- 	public void setLiName(String liName) {
-		this.liName = liName;
-	}
- 	public String getDiName() {
-		return diName;
-	}
- 	public void setDiName(String diName) {
-		this.diName = diName;
-	}
- 	public Long getMiNum() {
+	public Long getMiNum() {
 		return miNum;
 	}
 	public void setMiNum(Long miNum) {
@@ -128,12 +103,39 @@ package com.ict.erp.vo;
 	public void setMiAddress2(String miAddress2) {
 		this.miAddress2 = miAddress2;
 	}
-	@Override
-	public String toString() {
-		return "MemberInfo [miNum=" + miNum + ", miId=" + miId + ", miName=" + miName + ", miPwd=" + miPwd + ", diCode="
-				+ diCode + ", liLevel=" + liLevel + ", miEmail=" + miEmail + ", miDesc=" + miDesc + ", miPhone="
-				+ miPhone + ", miZipcode=" + miZipcode + ", miAddress1=" + miAddress1 + ", miAddress2=" + miAddress2
-				+ "]";
+	public String getLiName() {
+		return liName;
+	}
+	public void setLiName(String liName) {
+		this.liName = liName;
+	}
+	public String getDiName() {
+		return diName;
+	}
+	public void setDiName(String diName) {
+		this.diName = diName;
+	}
+	public MemberInfo(Long miNum, String miId, String miName, String miPwd, String diCode, Long liLevel, String miEmail,
+			String miDesc, String miPhone, String miZipcode, String miAddress1, String miAddress2, String liName,
+			String diName, PageInfo pi) {
+		super();
+		this.miNum = miNum;
+		this.miId = miId;
+		this.miName = miName;
+		this.miPwd = miPwd;
+		this.diCode = diCode;
+		this.liLevel = liLevel;
+		this.miEmail = miEmail;
+		this.miDesc = miDesc;
+		this.miPhone = miPhone;
+		this.miZipcode = miZipcode;
+		this.miAddress1 = miAddress1;
+		this.miAddress2 = miAddress2;
+		this.liName = liName;
+		this.diName = diName;
+		this.pi = pi;
 	}
 	
-} 
+	
+	
+ }

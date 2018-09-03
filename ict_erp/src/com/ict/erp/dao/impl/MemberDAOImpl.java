@@ -70,7 +70,7 @@
 				"MIPHONE,\r\n" + 
 				"MIZIPCODE,\r\n" + 
 				"MIADDRESS1,\r\n" + 
-				"MIADDRESS2,\r\n" + 
+				"MIADDRESS,\r\n" + 
 				"LILEVEL)";
 		sql += "values(seq_minum.nextval,?,?,?,?,?,?,?,?,?,?,?)";
 		try {

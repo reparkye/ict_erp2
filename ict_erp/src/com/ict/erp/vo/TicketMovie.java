@@ -1,23 +1,32 @@
 package com.ict.erp.vo;
-
-public class TicketMovieInfo {
-	
-	private int tmNum;
+ public class TicketMovie {
+	private Integer tmNum;
 	private String tmName;
-	private int tmPrice;
+	private Integer tmPrice;
 	private String tmStartDat;
 	private String tmEndDat;
 	private String tmCredat;
 	private String tmDesc;
-	private int tmCnt;
+	private Integer tmCnt;
 	private String tmImg;
-
-	public TicketMovieInfo() {}
-	
-	public int getTmNum() {
+	public TicketMovie() {}
+	public TicketMovie(Integer tmNum, String tmName, Integer tmPrice, String tmStartDat, String tmEndDat,
+			String tmCredat, String tmDesc, Integer tmCnt, String tmImg) {
+		super();
+		this.tmNum = tmNum;
+		this.tmName = tmName;
+		this.tmPrice = tmPrice;
+		this.tmStartDat = tmStartDat;
+		this.tmEndDat = tmEndDat;
+		this.tmCredat = tmCredat;
+		this.tmDesc = tmDesc;
+		this.tmCnt = tmCnt;
+		this.tmImg = tmImg;
+	}
+	public Integer getTmNum() {
 		return tmNum;
 	}
-	public void setTmNum(int tmNum) {
+	public void setTmNum(Integer tmNum) {
 		this.tmNum = tmNum;
 	}
 	public String getTmName() {
@@ -26,10 +35,10 @@ public class TicketMovieInfo {
 	public void setTmName(String tmName) {
 		this.tmName = tmName;
 	}
-	public int getTmPrice() {
+	public Integer getTmPrice() {
 		return tmPrice;
 	}
-	public void setTmPrice(int tmPrice) {
+	public void setTmPrice(Integer tmPrice) {
 		this.tmPrice = tmPrice;
 	}
 	public String getTmStartDat() {
@@ -56,10 +65,10 @@ public class TicketMovieInfo {
 	public void setTmDesc(String tmDesc) {
 		this.tmDesc = tmDesc;
 	}
-	public int getTmCnt() {
+	public Integer getTmCnt() {
 		return tmCnt;
 	}
-	public void setTmCnt(int tmCnt) {
+	public void setTmCnt(Integer tmCnt) {
 		this.tmCnt = tmCnt;
 	}
 	public String getTmImg() {
@@ -70,24 +79,10 @@ public class TicketMovieInfo {
 	}
 	@Override
 	public String toString() {
-		return "TicketInfo [tmNum=" + tmNum + ", tmName=" + tmName + ", tmPrice=" + tmPrice + ", tmStartDat="
+		return "TicketMovie [tmNum=" + tmNum + ", tmName=" + tmName + ", tmPrice=" + tmPrice + ", tmStartDat="
 				+ tmStartDat + ", tmEndDat=" + tmEndDat + ", tmCredat=" + tmCredat + ", tmDesc=" + tmDesc + ", tmCnt="
 				+ tmCnt + ", tmImg=" + tmImg + "]";
 	}
-	public TicketMovieInfo(int tmNum, String tmName, int tmPrice, String tmStartDat, String tmEndDat, String tmCredat,
-			String tmDesc, int tmCnt, String tmImg) {
-		super();
-		this.tmNum = tmNum;
-		this.tmName = tmName;
-		this.tmPrice = tmPrice;
-		this.tmStartDat = tmStartDat;
-		this.tmEndDat = tmEndDat;
-		this.tmCredat = tmCredat;
-		this.tmDesc = tmDesc;
-		this.tmCnt = tmCnt;
-		this.tmImg = tmImg;
-	}
-	
 	
 	
 }
