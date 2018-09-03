@@ -1,0 +1,52 @@
+[2018-09-03 09:29:53,302] INFO (AuthFilter.java:33):/
+[2018-09-03 09:29:53,351] WARN (AuthFilter.java:35):/
+[2018-09-03 09:29:53,352]ERROR (AuthFilter.java:37):/
+[2018-09-03 09:29:53,352]FATAL (AuthFilter.java:39):/
+[2018-09-03 09:36:07,923] INFO (AuthFilter.java:33):/
+[2018-09-03 09:36:07,932] WARN (AuthFilter.java:35):/
+[2018-09-03 09:36:07,933]ERROR (AuthFilter.java:37):/
+[2018-09-03 09:36:07,933]FATAL (AuthFilter.java:39):/
+[2018-09-03 09:37:46,768] INFO (AuthFilter.java:33):/member/memberList
+[2018-09-03 09:37:46,769] WARN (AuthFilter.java:35):/member/memberList
+[2018-09-03 09:37:46,769]ERROR (AuthFilter.java:37):/member/memberList
+[2018-09-03 09:37:46,770]FATAL (AuthFilter.java:39):/member/memberList
+[2018-09-03 09:37:48,023] INFO (AuthFilter.java:33):/vendor/bootstrap/css/bootstrap.min.css
+[2018-09-03 09:37:48,024] WARN (AuthFilter.java:35):/vendor/bootstrap/css/bootstrap.min.css
+[2018-09-03 09:37:48,027]ERROR (AuthFilter.java:37):/vendor/bootstrap/css/bootstrap.min.css
+[2018-09-03 09:37:48,028]FATAL (AuthFilter.java:39):/vendor/bootstrap/css/bootstrap.min.css
+[2018-09-03 09:37:48,028] INFO (AuthFilter.java:33):/vendor/jquery/jquery.min.js
+[2018-09-03 09:37:48,028] WARN (AuthFilter.java:35):/vendor/jquery/jquery.min.js
+[2018-09-03 09:37:48,029]ERROR (AuthFilter.java:37):/vendor/jquery/jquery.min.js
+[2018-09-03 09:37:48,029]FATAL (AuthFilter.java:39):/vendor/jquery/jquery.min.js
+[2018-09-03 09:37:48,034] INFO (AuthFilter.java:33):/css/simple-sidebar.css
+[2018-09-03 09:37:48,034] WARN (AuthFilter.java:35):/css/simple-sidebar.css
+[2018-09-03 09:37:48,034]ERROR (AuthFilter.java:37):/css/simple-sidebar.css
+[2018-09-03 09:37:48,035]FATAL (AuthFilter.java:39):/css/simple-sidebar.css
+[2018-09-03 09:37:48,048] INFO (AuthFilter.java:33):/css/common.css
+[2018-09-03 09:37:48,048] WARN (AuthFilter.java:35):/css/common.css
+[2018-09-03 09:37:48,048]ERROR (AuthFilter.java:37):/css/common.css
+[2018-09-03 09:37:48,049]FATAL (AuthFilter.java:39):/css/common.css
+[2018-09-03 09:37:48,056] INFO (AuthFilter.java:33):/vendor/bootstrap/js/bootstrap.bundle.min.js
+[2018-09-03 09:37:48,056] WARN (AuthFilter.java:35):/vendor/bootstrap/js/bootstrap.bundle.min.js
+[2018-09-03 09:37:48,057]ERROR (AuthFilter.java:37):/vendor/bootstrap/js/bootstrap.bundle.min.js
+[2018-09-03 09:37:48,057]FATAL (AuthFilter.java:39):/vendor/bootstrap/js/bootstrap.bundle.min.js
+[2018-09-03 09:37:48,061] INFO (AuthFilter.java:33):/vendor/common.js
+[2018-09-03 09:37:48,062] WARN (AuthFilter.java:35):/vendor/common.js
+[2018-09-03 09:37:48,062]ERROR (AuthFilter.java:37):/vendor/common.js
+[2018-09-03 09:37:48,062]FATAL (AuthFilter.java:39):/vendor/common.js
+[2018-09-03 09:37:48,297] INFO (AuthFilter.java:33):/favicon.ico
+[2018-09-03 09:37:48,298] WARN (AuthFilter.java:35):/favicon.ico
+[2018-09-03 09:37:48,298]ERROR (AuthFilter.java:37):/favicon.ico
+[2018-09-03 09:37:48,298]FATAL (AuthFilter.java:39):/favicon.ico
+[2018-09-03 09:37:55,298] INFO (AuthFilter.java:33):/level/levelList
+[2018-09-03 09:37:55,299] WARN (AuthFilter.java:35):/level/levelList
+[2018-09-03 09:37:55,299]ERROR (AuthFilter.java:37):/level/levelList
+[2018-09-03 09:37:55,299]FATAL (AuthFilter.java:39):/level/levelList
+[2018-09-03 09:37:56,216] INFO (AuthFilter.java:33):/depart/departList
+[2018-09-03 09:37:56,216] WARN (AuthFilter.java:35):/depart/departList
+[2018-09-03 09:37:56,217]ERROR (AuthFilter.java:37):/depart/departList
+[2018-09-03 09:37:56,217]FATAL (AuthFilter.java:39):/depart/departList
+[2018-09-03 09:37:59,023] INFO (AuthFilter.java:33):/depart/departList
+[2018-09-03 09:37:59,024] WARN (AuthFilter.java:35):/depart/departList
+[2018-09-03 09:37:59,024]ERROR (AuthFilter.java:37):/depart/departList
+[2018-09-03 09:37:59,024]FATAL (AuthFilter.java:39):/depart/departList
