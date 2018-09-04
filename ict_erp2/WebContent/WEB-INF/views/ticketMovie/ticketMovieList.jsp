@@ -37,7 +37,7 @@
 					</tr>
 				</c:if>
 				<tr>
-					<td colspan="8"><button data-page="/ticketMovie/ticketMovieInsert">노래 등록</button></td> 
+					<td colspan="8"><button data-page="/ticketMovie/ticketMovieInsert">영화 등록</button></td> 
 				</tr>
 			</table>
 		</div>

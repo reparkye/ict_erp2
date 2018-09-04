@@ -76,14 +76,23 @@ public class TicketMovieDAOImpl extends CommonDAOImpl implements TicketMovieDAO 
 
 	@Override
 	public int updateTicketList(TicketMovie tm) throws SQLException {
-		// TODO Auto-generated method stub
+		/*String sql = "update Ticket_Movie set tmName=?, tmPrice=?, tmStartdat=?, tmEnddat=?, "*/
+		
 		return 0;
 	}
 
 	@Override
 	public int deleteTicketList(TicketMovie tm) throws SQLException {
-		// TODO Auto-generated method stub
-		return 0;
+		String sql = "delete from Ticket_Movie where tmNum=?";
+		try {
+			ps = con.prepareStatement(sql); 
+			ps.setInt(1, tm.getTmNum());
+			return ps.executeUpdate();
+		}catch(SQLException e) {
+			throw e;
+		}finally {
+			close();
+		}
 	}
 
 	
