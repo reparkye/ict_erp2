@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<table border='1'>
+	<thead>
+				<tr>
+						<!-- <th>번호</th>
+						<th>레벨등급</th>
+						<th>레벨명</th>
+						<th>레벨설명</th> -->
+						<th>음악번호</th>
+						<th>노래제목</th>
+						<th>가수이름</th>
+						<th>밴드</th>
+						<th>좋아요</th>
+						<th>싫어요</th>
+						<th>날짜</th>
+						<th>부가설명</th>
+				</tr>
+	</thead>
+	<tbody id="tBody">
+	</tbody>
+</table>
+<button type="button" id="btn">제이슨테스트</button>
+<script>
+		document.querySelector('#btn').onclick = function() {
+
+			var req = new XMLHttpRequest();
+
+			req.onreadystatechange = function() {
+				if (req.readyState == req.DONE) { //req.DONE =4 대신 사용할수있다. 
+					if (req.status == 200) {
+						var obj = JSON.parse(req.responseText);
+						var html = '';
+							for(var i=0; i<obj.length; i++){
+								/* html += '<tr>';
+								html += '<td>' + obj[i].liNum + '</td>';
+								html += '<td>' + obj[i].liLevel + '</td>';
+								html += '<td>' + obj[i].liName + '</td>';
+								html += '<td>' + obj[i].liDesc + '</td>';
+								html += '</tr>'; */
+								 html += '<tr>';
+								html += '<td>' + obj[i].mcNum + '</td>';
+								html += '<td>' + obj[i].mcName + '</td>';
+								html += '<td>' + obj[i].mcSinger + '</td>';
+								html += '<td>' + obj[i].mcVendor + '</td>';
+								html += '<td>' + obj[i].mcLike + '</td>';
+								html += '<td>' + obj[i].mcDisLike + '</td>';
+								html += '<td>' + obj[i].mcCredate + '</td>';
+								html += '<td>' + obj[i].mcDesc + '</td>';
+								html += '</tr>'; 
+								
+							}			
+							document.querySelector('#tBody').innerHTML = html;
+					} else {
+
+					}
+				}
+			}
+			var param = {
+				name : "홍길동",
+				age : '33',
+				address : 'seuol'
+			};
+			//console.log(param);
+			param = encodeURIComponent(JSON.stringify(param));
+			//console.log(param);
+			req.open('POST', '/json/list?param=' + param); //GET방식으로 /JSON.. 호출  form태그에있는 메소드같은 친구
+			req.send();
+		}
+	</script>
+</body>
+</html>
