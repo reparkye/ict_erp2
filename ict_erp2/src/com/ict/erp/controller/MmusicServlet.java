@@ -29,7 +29,7 @@ public class MmusicServlet extends HttpServlet {
 				request.setAttribute("tList", ms.getSelectMmusicList(mi));
 			}else if(cmd.equals("mMusicview")) {
 				
-				
+			}
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}
