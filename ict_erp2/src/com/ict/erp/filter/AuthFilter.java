@@ -19,7 +19,8 @@ public class AuthFilter implements Filter {
         // TODO Auto-generated constructor stub
     }
 	public void destroy() {
-		// TODO Auto-generated method stub
+		System.out.println("destroy");
+		// TODO Auto-generated method stub  죽었을떄 
 	}
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		HttpServletRequest hsr = (HttpServletRequest)request;
@@ -45,7 +46,8 @@ public class AuthFilter implements Filter {
 		chain.doFilter(request, response);
 	}
 	public void init(FilterConfig fConfig) throws ServletException {
-		// TODO Auto-generated method stub
+		System.out.println("init");
+		// TODO Auto-generated method stub   새로생성될떄
 	}
 
 }

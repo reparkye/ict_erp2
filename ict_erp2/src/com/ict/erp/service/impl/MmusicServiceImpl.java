@@ -10,7 +10,7 @@ import com.ict.erp.service.MmusicService;
 import com.ict.erp.vo.MmusicInfo;
 
 public class MmusicServiceImpl implements MmusicService {
-
+	
 	MmusicDAO mdao = new MmusicDAOImpl();
 	@Override
 	public List<MmusicInfo> getSelectMmusicList(MmusicInfo mi) throws SQLException {
@@ -20,10 +20,10 @@ public class MmusicServiceImpl implements MmusicService {
 		}catch(SQLException e) {
 			throw e;
 		}finally {
-			DBCon.close();
+			DBCon.getCon();
 		}
+		
 	}
-
 	public static void main(String[] args) {
 		MmusicService ms = new MmusicServiceImpl();
 		try {
@@ -39,13 +39,11 @@ public class MmusicServiceImpl implements MmusicService {
 		try {
 			return mdao.selectMmusic(mi);
 		}catch(SQLException e) {
-		throw e;
+			throw e;
 		}finally {
 			DBCon.getCon();
 		}
-		
 	}
-
 	@Override
 	public int insertList(MmusicInfo mi) throws SQLException {
 		mdao.setConnection(DBCon.getCon());

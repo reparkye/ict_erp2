@@ -19,14 +19,14 @@
 			</tr>
 				<c:forEach items ="${tList}" var = "ti">
 				<tr>
-					<td><input type="text" name="mcNum" value="${ti.mcNum }"></td>
-					<td><input type="text" name="mcName" value="${ti.mcName }"></td>
-					<td><input type="text" name="mcSinger" value="${ti.mcSinger }"></td>				
-					<td><input type="text" name="mcVendor" value="${ti.mcVendor }"></td>			
-					<td><input type="text" name="mcLike" value="${ti.mcLike }"></td>		
-					<td><input type="text" name="mcDisLike" value="${ti.mcDisLike }"></td>	
-					<td><input type="text" name="mcCredate" value="${ti.mcCredate }"></td>	
-					<td><input type="text" name="mcDesc" value="${ti.mcDesc }"></td>
+					<td><a href ="/mMusic/mMusicView?mcNum=${ti.mcNum}">${ti.mcNum}</a></td>
+					<td>${ti.mcName }</td>
+					<td>${ti.mcSinger }</td>				
+					<td>${ti.mcVendor }</td>			
+					<td>${ti.mcLike }</td>		
+					<td>${ti.mcDisLike }</td>	
+					<td>${ti.mcCredate }</td>	
+					<td>${ti.mcDesc }</td>
 				</tr>			
 				</c:forEach>
 		</table>

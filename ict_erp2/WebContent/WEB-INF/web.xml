@@ -52,6 +52,16 @@
     <servlet-name>MmusicServlet</servlet-name>
     <url-pattern>/mMusic/*</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>TticketServlet</servlet-name>
+  	<servlet-class>com.ict.erp.controller.TticketMovieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TticketServlet</servlet-name>
+  	<url-pattern>/tTicket/*</url-pattern>
+  </servlet-mapping> 
+  
   <error-page>
     <error-code>404</error-code>
     <location>/WEB-INF/views/error/404.jsp</location>
