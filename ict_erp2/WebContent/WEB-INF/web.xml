@@ -54,11 +54,11 @@
   </servlet-mapping>
   
   <servlet>
-  	<servlet-name>TticketServlet</servlet-name>
+  	<servlet-name>TticketMovieServlet</servlet-name>
   	<servlet-class>com.ict.erp.controller.TticketMovieServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>TticketServlet</servlet-name>
+  	<servlet-name>TticketMovieServlet</servlet-name>
   	<url-pattern>/tTicket/*</url-pattern>
   </servlet-mapping> 
   

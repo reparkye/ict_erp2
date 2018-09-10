@@ -30,13 +30,13 @@ public class MmusicServlet extends HttpServlet {
 			
 			}else if(cmd.equals("mMusicView")) {
 				
-<<<<<<< HEAD
+//<<<<<<< HEAD
 				String mcNumstr = request.getParameter("mcNum");
 				MmusicInfo mo = new MmusicInfo();
 				mo.setMcNum(Integer.parseInt(mcNumstr));
 				request.setAttribute("mu", ms.getSelectMmusic(mo));
-=======
->>>>>>> branch 'master' of https://github.com/reparkye/ict_erp2.git
+//=======
+//>>>>>>> branch 'master' of https://github.com/reparkye/ict_erp2.git
 			}
 		}catch(SQLException e) {
 			e.printStackTrace();
