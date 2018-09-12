@@ -44,23 +44,8 @@
     <servlet-name>TicketMovieServlet</servlet-name>
     <url-pattern>/ticketMovie/*</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <servlet-name>MmusicServlet</servlet-name>
-    <servlet-class>com.ict.erp.controller.MmusicServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>MmusicServlet</servlet-name>
-    <url-pattern>/mMusic/*</url-pattern>
-  </servlet-mapping>
   
-  <servlet>
-  	<servlet-name>TticketMovieServlet</servlet-name>
-  	<servlet-class>com.ict.erp.controller.TticketMovieServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>TticketMovieServlet</servlet-name>
-  	<url-pattern>/tTicket/*</url-pattern>
-  </servlet-mapping> 
+  
   
   <error-page>
     <error-code>404</error-code>
