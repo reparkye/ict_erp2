@@ -44,9 +44,6 @@
     <servlet-name>TicketMovieServlet</servlet-name>
     <url-pattern>/ticketMovie/*</url-pattern>
   </servlet-mapping>
-  
-  
-  
   <error-page>
     <error-code>404</error-code>
     <location>/WEB-INF/views/error/404.jsp</location>
